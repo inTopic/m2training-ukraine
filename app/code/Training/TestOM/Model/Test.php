@@ -8,17 +8,20 @@ class Test
     private $arrayList;
     private $name;
     private $number;
+    private $managerFactory;
 
     public function __construct(
             ManagerInterface $manager,
             $name,
             int $number,
-            array $arrayList
+            array $arrayList,
+            \Training\TestOM\Model\ManagerInterfaceFactory $managerFactory
         ) {
         $this->manager = $manager;
         $this->name = $name;
         $this->number = $number;
         $this->arrayList = $arrayList;
+        $this->managerFactory = $managerFactory;
     }
 
     public function log()
@@ -30,6 +33,14 @@ class Test
         print_r($this->number);
         echo '<br>';
         print_r($this->arrayList);
+        echo '<br>';
+        
+       
+        //that will not be working because we don't have method create implemented
+//        $newManager = $this->manager->create();
+        
+        //intead of this we can use factory directly
+        print_r(get_class($this->managerFactory));
     }
 
 
