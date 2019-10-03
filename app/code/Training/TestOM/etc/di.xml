@@ -9,6 +9,7 @@
                 <item name="item_1" xsi:type="string">array text item</item>
                 <item name="item_2" xsi:type="number">6</item>
             </argument>
+            <argument name="managerCustomImplementation" xsi:type="object">Training\TestOM\Model\ManagerCustomImplementation</argument>
         </arguments>
     </type>
 </config>
