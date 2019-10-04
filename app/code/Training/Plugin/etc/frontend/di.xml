@@ -3,4 +3,8 @@
     <type name="Magento\Framework\UrlInterface">
         <plugin name="training_plugin" type="Training\Plugin\Model\Url" />
     </type>
+        
+    <type name="Magento\Framework\View\Element\Template">
+        <plugin name="training_template" type="Training\Plugin\Block\Template" />   
+    </type>
 </config>
