@@ -8,7 +8,7 @@
         <plugin name="training_template" type="Training\Plugin\Block\Template" />   
     </type>
     
-    <type name="Magento\Catalog\Controller\Product\View">
+<!--    <type name="Magento\Catalog\Controller\Product\View">
         <plugin name="training_product" type="Training\Plugin\Controller\Product\View" />
-    </type>
+    </type>-->
 </config>
