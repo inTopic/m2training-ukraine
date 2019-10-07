@@ -8,7 +8,7 @@ use Psr\Log\LoggerInterface;
 class LogPageHtml implements ObserverInterface {
 
     /**
-     * @var \Psr\Log\LoggerInterface
+     * @var \Psr\Log\LoggerAddToCartInterface
      */
     private $logger;
 
@@ -24,7 +24,7 @@ class LogPageHtml implements ObserverInterface {
     public function execute(\Magento\Framework\Event\Observer $observer) {
         $response = $observer->getEvent()->getData('response');
         if ($response->getBody()) {
-            $this->logger->debug($response->getBody());
+//            $this->logger->debug($response->getBody());
         }
     }
 

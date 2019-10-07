@@ -216,7 +216,10 @@ return [
         'Training_Dependency4' => 0,
         'Training_Dependency0' => 1,
         'Training_Dependency' => 1,
+        'Training_Plugin' => 1,
+        'Training_Test' => 1,
         'Training_TestOM' => 1,
+        'Training_TestOMOverride' => 1,
         'Vertex_Tax' => 1
     ]
 ];
