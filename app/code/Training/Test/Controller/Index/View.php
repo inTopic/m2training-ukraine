@@ -26,9 +26,9 @@ class View extends \Magento\Catalog\Controller\Product\View {
      * @return \Magento\Framework\Controller\Result\Forward|\Magento\Framework\Controller\Result\Redirect
      */
     public function execute() {
-        if (!$this->customerSession->isLoggedIn()) {
-            return $this->redirectFactory->create()->setPath('customer/account/login');
-        }
+//        if (!$this->customerSession->isLoggedIn()) {
+//            return $this->redirectFactory->create()->setPath('customer/account/login');
+//        }
         return parent::execute();
     }
 
